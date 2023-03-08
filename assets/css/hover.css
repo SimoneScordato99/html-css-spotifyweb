@@ -1,0 +1,18 @@
+/* nav */
+
+#nav li:hover {
+    color: white;
+    border-left: 3px solid #1ED760;
+}
+#nav .new-playlist:hover {
+    color: white;
+}
+#nav .playlist-n:hover {
+    color: white;
+}
+#nav .install:hover {
+    color: white;
+}
+#nav .profile:hover {
+    color: white;    
+}
