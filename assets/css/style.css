@@ -38,15 +38,20 @@ main {
     min-width: 250px;
     height: calc(100vh - 100px);
     background-color: black;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 #nav .padding-nav {
     padding-left: var(--padding-left);
     padding-bottom: var(--padding-bottom);
     padding-top: var(--padding-top);
 }
-
-#nav .padding-nav img {
+#nav .padding-nav #logo-spotify-piccolo {
+    display: none;
+}
+#nav .padding-nav #logo-spotify-grande {
     width: 70%;
 }
 #nav ul {
@@ -69,6 +74,9 @@ main {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+#nav .playlist {
+    overflow:auto;
+}
 #nav .playlist h3 {
     color: white;
     text-transform: uppercase;
@@ -88,22 +96,25 @@ main {
     flex-direction: row;
     align-items: center;
 }
+#nav .playlist-n-scroll {
+    max-height: 500px;
+    overflow: auto;
+}
 #nav .playlist-n {
     padding-left: var(--padding-left);
     padding-top: var(--padding-top); 
     color: #6E6E6E;
 }
 #nav .nav-col-top {
-    position: absolute;
-    top: 0;
+    height: calc(100% - 130px);
 }
 
 #nav .nav-col-botn {
+    height: 130px;
     padding-left: 1rem;
     color: #6E6E6E;
-    position: absolute;
-    bottom: 0;
     background-color: black;
+
 }
 #nav .nav-col-botn span {
     padding-left: var(--padding-left);
