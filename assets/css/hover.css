@@ -16,3 +16,6 @@
 #nav .profile:hover {
     color: white;    
 }
+.footer-title h3:hover {
+    text-decoration: underline;
+}

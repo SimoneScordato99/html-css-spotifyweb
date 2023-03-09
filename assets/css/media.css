@@ -12,17 +12,145 @@
 
 /* tablet */
 @media screen and (max-width: 768px) {
-    
+    #footer .footer-cntr .progress input {
+        min-width: 300px;
+        margin: 0 0.5rem;
+        flex-basis: 20%;
+    }
+    #footer .footer-dx input {
+        display: none;
+    }
+    #footer .footer-cntr {
+        margin: 0 0.8rem;
+    }
+    #footer .footer-dx {
+        flex-basis: 110px;
 }
 
 
 /* telefono normale */
 @media screen and (max-width: 425px) {
-    
+    #nav {
+        width: 100px;
+        
+        
+    }
+    #nav .padding-nav #logo-spotify-piccolo {
+        display: block;
+        width: 45px;
+        margin: 0 auto;
+    }
+    #nav .padding-nav #logo-spotify-grande {
+        display: none;
+    }
+    #nav .padding-nav {
+        padding-left: 0;
+    }
+    #nav ul {
+        padding-top: 0;
+    }
+    #nav ul li span{
+        display: none;
+    }
+    #nav ul li i{
+        padding-left: 18px;
+        text-align: center;
+        font-size: 35px;
+    }
+    #nav ul li i {
+        margin: 0 auto;
+    }
+    .playlist {
+        display: none;
+    }
+    #nav .nav-col-botn {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .nav-col-botn span {
+        display: none;
+    }
+    #nav .nav-col-botn .install {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #nav .nav-col-botn .install img {
+        width: 30px;
+    }
+    #nav .nav-col-botn .profile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer .footer-cntr .player i {
+        font-size: 1rem;
+        padding: 0.9rem 0.4rem;
+    }
+    #footer .footer-sx {
+        flex-basis: 50px;
+    }
+    #footer .footer-sx .footer-img img {
+        width: 50px;
+        padding-left: 0.5rem;
+    }
+    #footer .footer-sx h3 {
+        font-size: 12px;
+    }
+    #footer .footer-sx .footer-title {
+        padding-left: 0.25rem;
+    }
+    #footer .footer-sx .footer-title div {
+        font-size: 10px;
+    }
+    #footer .footer-sx .footer-icons {
+        padding-left: 0.25rem;
+    }
+    #footer .footer-cntr .progress input {
+        min-width: 125px;
+        margin: 0 0.5rem;
+        flex-basis: 20%;
+    }
+    #footer .footer-cntr .progress div {
+        font-size: 10px;
+    }
+    #footer .footer-dx {
+        flex-basis: 50px;
+        padding-right: 0.5rem;
+    }
+    #footer .footer-dx input {
+        display: none;
+    }
+    #footer .footer-dx #vol-icon {
+        display: none;
+    }
 }
 
 
+
 /* telefono xs */
-@media screen and (max-width: 320px) {
-    
+@media screen and (max-width: 375px) {
+    #nav {
+        width: 75px;
+        height: calc(100vh - 80px); 
+    }
+    #nav ul li i{
+        padding-left: 12px;
+        text-align: center;
+        font-size: 35px;
+    }
+    #footer {
+        height: 80px;
+    }
+    #footer .footer-cntr {
+        margin: 0 0.4rem;
+    }
+    #footer .footer-cntr .player i {
+        font-size: 0.6rem;
+        padding: 0.6rem 0.2rem;
+    }
+    #footer .footer-cntr .player .play {
+        font-size: 1.5rem;
+    }
+    #footer .footer-cntr .progress div {
+        font-size: 10px;
+    }
 }

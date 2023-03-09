@@ -35,7 +35,6 @@ main {
 }
 #nav {
     width: 250px;
-    min-width: 250px;
     height: calc(100vh - 100px);
     background-color: black;
     display: flex;
@@ -117,7 +116,7 @@ main {
 
 }
 #nav .nav-col-botn span {
-    padding-left: var(--padding-left);
+    padding-left: 0.5rem;
 }
 #nav .nav-col-botn .install {
     display: flex;
@@ -130,7 +129,7 @@ main {
 }
 #nav .nav-col-botn hr {
     margin-top: 1rem;
-    color: #6E6E6E;
+    border-color: #6E6E6E;
 }
 #nav .nav-col-botn .profile {
     display: flex;
