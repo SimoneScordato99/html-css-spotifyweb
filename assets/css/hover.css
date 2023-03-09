@@ -19,3 +19,30 @@
 .footer-title h3:hover {
     text-decoration: underline;
 }
+#footer .footer-sx .footer-title div:hover {
+    color: white;
+}
+#footer i:hover {
+    color: white;
+}
+#footer .footer-sx .footer-icons #heart:hover {
+    text-shadow: 0 0 6px red;
+}
+#footer .footer-cntr .player .play:hover {
+    text-shadow: 0 0 6px #1ED760;
+}
+#main .menu .tasti a:hover {
+    border-bottom: 1px solid #1ed75fce ;
+    box-shadow: 0 11px 17px -7px #1ed75faa;
+}
+#main .card .card-relative:hover img {
+    filter:blur(1px) opacity(80%) grayscale(50%);
+}
+#main .card .card-relative:hover i {
+    display: block;
+    filter:none;
+}
+#main .bunner .btn-bunner:hover {
+    color: white;
+    padding: 1rem 2.25rem;
+}

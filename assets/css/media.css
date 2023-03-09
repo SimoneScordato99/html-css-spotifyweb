@@ -1,4 +1,7 @@
 @media screen and (max-height: 900px) {
+    #nav {
+        min-width: 250px;
+    }
     #nav .playlist-n-scroll {
         max-height: 100px;
         overflow: auto;
@@ -12,6 +15,16 @@
 
 /* tablet */
 @media screen and (max-width: 768px) {
+    #nav {
+        width: 200px;
+        min-width: 200px;
+    }
+    #main .bunner {
+        left: 200px;
+    }
+    #main .card {
+        flex-basis: calc(100% / 4 - 2%);
+    }
     #footer .footer-cntr .progress input {
         min-width: 300px;
         margin: 0 0.5rem;
@@ -25,15 +38,15 @@
     }
     #footer .footer-dx {
         flex-basis: 110px;
-}
+    }
 
+}
 
 /* telefono normale */
 @media screen and (max-width: 425px) {
     #nav {
-        width: 100px;
-        
-        
+        width: 75px;
+        min-width: 75px;  
     }
     #nav .padding-nav #logo-spotify-piccolo {
         display: block;
@@ -53,9 +66,9 @@
         display: none;
     }
     #nav ul li i{
-        padding-left: 18px;
+        padding-right: 18px;
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
     }
     #nav ul li i {
         margin: 0 auto;
@@ -80,6 +93,12 @@
     #nav .nav-col-botn .profile {
         margin-left: auto;
         margin-right: auto;
+    }
+    #main .bunner {
+        left: 75px;
+    }
+    #main .card {
+        flex-basis: calc(100% / 2 - 2%);
     }
     #footer .footer-cntr .player i {
         font-size: 1rem;
@@ -130,6 +149,7 @@
 @media screen and (max-width: 375px) {
     #nav {
         width: 75px;
+        min-width: 75px;
         height: calc(100vh - 80px); 
     }
     #nav ul li i{
@@ -144,8 +164,8 @@
         margin: 0 0.4rem;
     }
     #footer .footer-cntr .player i {
-        font-size: 0.6rem;
-        padding: 0.6rem 0.2rem;
+        font-size: 1rem;
+        padding: 0.6rem 0.4rem;
     }
     #footer .footer-cntr .player .play {
         font-size: 1.5rem;

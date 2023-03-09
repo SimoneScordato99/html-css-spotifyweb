@@ -35,6 +35,7 @@ main {
 }
 #nav {
     width: 250px;
+    min-width: 250px;
     height: calc(100vh - 100px);
     background-color: black;
     display: flex;
@@ -62,7 +63,7 @@ main {
     color: #6E6E6E;  
 }
 #nav ul li i{
-    padding-left: var(--padding-left);
+    padding-left: 2rem;
     font-size: 25px;
     width: 30px;
 }
@@ -81,8 +82,9 @@ main {
     text-transform: uppercase;
     padding-left: var(--padding-left);
 }
+#nav
 #nav .playlist i {
-    font-size: 30px; 
+    font-size: 35px;
 }
 #nav .playlist span {
     padding-left: 1rem;   
@@ -154,19 +156,106 @@ main {
 
 
 
-
-
-
-
-
-
-
+/* main */
 #main {
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: #141922;
     overflow-y: scroll;
+    padding-top: 78px;
+    padding-bottom: 100px;
 }
+#main .bunner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 250px;
+    height: 78px;
+    background-color: #00000098;
+    text-align: end;
+    padding-top: 25px;
+}
+#main .bunner .btn-bunner {
+    margin: 20px;
+    padding: 0.75rem 2rem;
+    color: #6E6E6E;
+    border: 1px solid #6E6E6E;
+    border-radius: 25px;
+}
+#main .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #6E6E6E;
+    align-items: center;
+}
+#main .menu .tasti a {
+    font-size: 12px;
+    margin: 10px 0.5rem 1rem;
+}
+#main  h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: start;
+    margin: 1rem;
+}
+#main .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 2%;
+}
+#main .card {
+    flex-basis: calc(100% / 6 - 2%);
+    margin-bottom: 1rem;
+    
+}
+#main .card .card-relative {
+    position: relative;
+}
+#main .card i {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 2rem;
+    color: white;
+    margin-top: -10%;
+    margin-right: -10%;
+    display: none;
+}
+#main .card h3 {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+#main .card div {
+    font-size: 0.7rem;
+    color: #6E6E6E;
+    text-align: center;
+    margin-top: 0.75rem;
+}
+#main p {
+    font-size: 0.7rem;
+    color: #6E6E6E;
+    margin: 1rem;
+}
+#main .popular img {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,6 +276,9 @@ main {
     justify-content: space-between;
     color: white;
 }
+#footer i {
+    color: #6E6E6E;
+}
 #footer .footer-sx {
     flex-basis: 250px;
     display: flex;
@@ -199,6 +291,9 @@ main {
 }
 #footer .footer-sx .footer-title {
     padding-left: 1rem;
+}
+#footer .footer-sx .footer-title div {
+    color: #6E6E6E;
 }
 
 #footer .footer-sx .footer-icons {
@@ -234,6 +329,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.step-rotate {
+    transform: rotate(180deg);
 }
 #footer .footer-cntr .player i {
     font-size: 1.5rem;
