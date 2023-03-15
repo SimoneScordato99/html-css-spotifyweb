@@ -83,8 +83,8 @@ main {
     padding-left: var(--padding-left);
 }
 #nav
-#nav .playlist i {
-    font-size: 35px;
+#nav .playlist .new-playlist{
+    font-size: 25px;
 }
 #nav .playlist span {
     padding-left: 1rem;   
